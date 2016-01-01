@@ -150,5 +150,6 @@ fi
 
 log "Compiling Application."
 # Build the Rust app
+$CACHE_DIR/rust/bin/rustc -V
 cd "$BUILD_DIR"
 CARGO_HOME="$CACHE_DIR/cargo" cargo build --release
